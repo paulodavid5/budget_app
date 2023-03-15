@@ -19,5 +19,5 @@ export async function logoutAction() {
     })
     toast.success("You have deleted your account!")
     //return main page
-    return redirect('/')
+    return redirect('/budget_app')
 }
