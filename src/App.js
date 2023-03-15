@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         errorElement: <Error />,
         children: [
             {
-                index: 'dashboard',
+                index: true,
                 element: <Dashboard />,
                 loader: dashboadLoader,
                 action: dashboardAction,
