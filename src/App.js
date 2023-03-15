@@ -20,7 +20,7 @@ import Error from './pages/Error';
 
 const router = createBrowserRouter([
     {
-        path: '/budget_app',
+        path: '/budget_app/',
         element: <Main />,
         loader: mainLoader,
         errorElement: <Error />,
