@@ -1,4 +1,4 @@
-export const wait = () => new Promise(res => setTimeout(res, Math.random() * 2000))
+export const wait = () => new Promise(res => setTimeout(res, Math.random() * 800))
 
 //generate random color
 const generateRandomColor = () => {
@@ -60,6 +60,7 @@ export const calculateSpentByBudget = (budgetId) => {
 }
 
 //formating
+export const formatDateToLocaleString = (epoch) => new Date(epoch).toLocaleDateString()
 
 //format %
 export const formatPercantage = (amt) => {
