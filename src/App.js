@@ -33,7 +33,7 @@ const router = createBrowserRouter([
                 errorElement: <Error />,
             },
             {
-                path: 'logout',
+                path: '/budget_app/logout',
                 action: logoutAction,
             }
         ],
