@@ -18,7 +18,7 @@ import { logoutAction } from './actions/logout';
 import Dashboard, { dashboadLoader, dashboardAction } from './pages/Dashboard';
 import Error from './pages/Error';
 import ExpensesPage, { expensesLoader, expensesAction } from './pages/ExpensesPage';
-import BudgetPage from './pages/BudgetPage'
+import BudgetPage, { budgetAction, budgetLoader } from './pages/BudgetPage'
 
 const router = createBrowserRouter([
     {
@@ -37,16 +37,16 @@ const router = createBrowserRouter([
             {
                 path: '/budget_app/budget/:id',
                 element: <BudgetPage />,
-                // loader: expensesLoader,
-                // action: expensesAction,
-                // errorElement: <Error />,
+                loader: budgetLoader,
+                action: budgetAction,
+                errorElement: <Error />,
             },
             {
                 path: '/budget_app/expenses',
                 element: <ExpensesPage />,
                 loader: expensesLoader,
                 action: expensesAction,
-                // errorElement: <Error />,
+                errorElement: <Error />,
             },
             {
                 path: '/budget_app/logout',
