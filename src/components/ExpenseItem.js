@@ -3,13 +3,13 @@ import { TrashIcon } from '@heroicons/react/24/solid'
 import { Link, useFetcher } from 'react-router-dom'
 import { formatCurrency, formatDateToLocaleString, getAllMatchingItems } from "../helpers"
 
-const ExpenseItem = ({ expense, showBudget }) => {
+const ExpenseItem = ({ expense, showBudget  }) => {
     const fetcher = useFetcher()
 
     const budget = getAllMatchingItems({
         category: 'budgets',
         key: 'id',
-        value: expense.budgetId
+        value: expense.budgetId,
     })[0]
 
     return (

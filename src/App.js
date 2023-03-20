@@ -13,6 +13,7 @@ import Main, { mainLoader } from './layouts/Main';
 
 //actions
 import { logoutAction } from './actions/logout';
+import { deleteBudget } from './actions/deleteBudget';
 
 //Routes
 import Dashboard, { dashboadLoader, dashboardAction } from './pages/Dashboard';
@@ -40,6 +41,11 @@ const router = createBrowserRouter([
                 loader: budgetLoader,
                 action: budgetAction,
                 errorElement: <Error />,
+                children: [
+                    {
+                        path: 'delete',
+                        action: deleteBudget,                    }
+                ]
             },
             {
                 path: '/budget_app/expenses',

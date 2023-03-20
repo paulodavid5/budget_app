@@ -19,7 +19,7 @@ const Error = () => {
                     <span>Go Back</span>
                 </button>
                 <Link
-                    to='/'
+                    to='/budget_app'
                     className='btn btn--dark'
                 >
                     <HomeIcon width={20} />
